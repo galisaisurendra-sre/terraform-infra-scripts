@@ -1,22 +1,22 @@
 ## Init command
 
-==> terraform init -backend-config="bucket=app-bucket-statefile" -backend-config="key=preprod/app-prod.tfstate"
+#### terraform init -backend-config="bucket=app-bucket-statefile" -backend-config="key=preprod/app-prod.tfstate"
 
 ## Validate command
 
-==> terraform validate -var-file=preprod.tfvars
+#### terraform validate -var-file=preprod.tfvars
 
 ## Plan command
 
-==> terraform plan -var-file=preprod.tfvars
+#### terraform plan -var-file=preprod.tfvars
 
 ## Apply commnand
 
-==> terraform apply -var-file=preprod.tfvars
+#### terraform apply -var-file=preprod.tfvars
 
 ## Destroy command
 
-==> terraform destroy -var-file=preprod.tfvars
+#### terraform destroy -var-file=preprod.tfvars
 
 # Incase the statefile is locked use below to unlock
 
@@ -44,4 +44,4 @@ Acquiring state lock. This may take a few moments...
 │ flag, but this is not recommended.
 ╵
 
-==> terraform force-unlock < Lock ID >
+#### terraform force-unlock < Lock ID >
